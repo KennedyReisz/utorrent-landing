@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Hack Regular";
+  src: url(assets/font/Hack\ Regular\ Nerd\ Font\ Complete.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Hack Regular";
+  color: rgb(211, 207, 201);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

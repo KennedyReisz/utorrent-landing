@@ -1,0 +1,201 @@
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+/* Left Side */
+.home-container > .home-leftside {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Apresentation Texts */
+.home-container > .home-leftside > .apresentation-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+/* O.S Skills Container */
+.home-container > .home-leftside > .os-skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.home-container > .home-leftside > .os-skills-container > .os {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home-container > .home-leftside > .os-skills-container > .os > svg {
+  transition: all ease 500ms;
+}
+
+.home-container > .home-leftside > .os-skills-container > .os > svg:hover {
+  scale: 1.2;
+  color: #ffffff9f;
+}
+
+/* Programming Language Skills Container */
+.home-container > .home-leftside > .programming-language-skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.home-container
+  > .home-leftside
+  > .programming-language-skills-container
+  > .langs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home-container
+  > .home-leftside
+  > .programming-language-skills-container
+  > .langs
+  > svg {
+  transition: all ease 500ms;
+}
+
+.home-container
+  > .home-leftside
+  > .programming-language-skills-container
+  > .langs
+  > svg:hover {
+  scale: 1.2;
+  color: #ffffff9f;
+}
+
+.home-container > .home-leftside > .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container > .home-leftside > .about-container > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.home-container > .home-leftside > .about-container > p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home-container > .home-leftside > .about-container > .socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home-container > .home-leftside > .about-container > .socials-link > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(211, 207, 201);
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: all ease 500ms;
+}
+
+.home-container > .home-leftside > .about-container > .socials-link > a:hover {
+  background-color: #ffffff26;
+}
+
+/* Right Side */
+@keyframes torrentAnimation {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+.home-container > .home-rightside {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container > .home-rightside > .torrent-img {
+  animation: torrentAnimation 2s linear infinite;
+  transition: all ease 500ms;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.4));
+  width: 512px;
+  height: 512px;
+}
+
+.home-container > .home-rightside > .torrent-img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  scale: 1.3;
+}
+
+@media (max-width: 1179px) {
+  .home-container {
+    flex-direction: column;
+    gap: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  .home-container > .home-leftside {
+    width: 100%;
+  }
+
+  .home-container > .home-rightside {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-container > .home-rightside > .torrent-img {
+    width: 312px;
+    height: 312px;
+  }
+
+  .home-container > .home-rightside > .torrent-img:hover {
+    scale: 1.2;
+  }
+}

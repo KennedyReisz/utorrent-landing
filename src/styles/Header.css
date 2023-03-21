@@ -1,0 +1,29 @@
+.header-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(48, 52, 54, 0.67);
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+
+.header-container > .header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container > .header-navbar > a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: all ease 500ms
+}
+
+.header-container > .header-navbar > a:hover {
+  background-color: #ffffff26;
+}
