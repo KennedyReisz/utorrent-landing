@@ -89,7 +89,7 @@ const Application = () => {
               About Me <FaUserAlt size={30} />
             </h1>
             <p>
-              I'm currently living in São Paulo - SP I have 19 years old. <br />{" "}
+              I'm currently living in São Paulo - SP I have 20 years old. <br />{" "}
               I'm Student in SENAC, Analysis and systems development.
             </p>
             <div className="socials-link">
