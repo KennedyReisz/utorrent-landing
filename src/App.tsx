@@ -90,7 +90,7 @@ const Application = () => {
             </h1>
             <p>
               I'm currently living in São Paulo - SP I have 20 years old. <br />{" "}
-              I'm Student in SENAC, Analysis and systems development.
+              I'm Student in SENAC, Analysis and systems development & Cyber Security.
             </p>
             <div className="socials-link">
               <a href="https://discord.com/users/848283585320452096">
